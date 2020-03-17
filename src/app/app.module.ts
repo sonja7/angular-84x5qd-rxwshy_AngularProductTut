@@ -11,7 +11,6 @@ import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
-import { SppingComponent } from './spping/spping.component';
 import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
