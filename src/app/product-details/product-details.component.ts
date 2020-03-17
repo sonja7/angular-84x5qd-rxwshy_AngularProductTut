@@ -10,10 +10,15 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent implements OnInit {
+addToCart(product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to the cart!');
+  }
+
 product;
   constructor(
     private route: ActivatedRoute,
-    private cart: CartService
+     private cartService: CartService
   ) { }
 
   ngOnInit() {
@@ -22,9 +27,6 @@ product;
   });
   }
 
-  addToCart(product) {
-    this.cartService.addToCart(product);
-    window.alert('Your product has been added to the cart!');
-  }
+ 
 
 }
